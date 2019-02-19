@@ -23,7 +23,6 @@
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIP-dh-XVm"/>
-                                    <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2y-rw-Qd1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-Wu-FzZ">
