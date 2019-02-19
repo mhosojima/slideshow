@@ -23,6 +23,7 @@
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIP-dh-XVm"/>
+                                    <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g2y-rw-Qd1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-Wu-FzZ">
@@ -76,6 +77,8 @@
                     </view>
                     <connections>
                         <outlet property="UIImageView" destination="COq-LT-ycY" id="J18-zi-a8e"/>
+                        <outlet property="backImage" destination="O4c-Wu-FzZ" id="YBF-ub-uNQ"/>
+                        <outlet property="nextImage" destination="htJ-Sx-IUX" id="uT2-Gv-XIn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

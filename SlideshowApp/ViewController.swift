@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func backImage(_ sender: Any) {
         if imageIndex == 0 {
             imageIndex = 2
@@ -60,14 +61,21 @@ class ViewController: UIViewController {
         }
         UIImageView.image = images[imageIndex]
     }
+
+    @IBOutlet weak var nextImage: UIButton!
+    @IBOutlet weak var backImage: UIButton!
     
     @IBAction func startStop(_ sender: Any) {
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(onTimer(_:)), userInfo: nil, repeats: true)
+            nextImage.isEnabled = false
+            backImage.isEnabled = false
         }
         else {
             self.timer.invalidate()
             self.timer = nil
+            nextImage.isEnabled = true
+            backImage.isEnabled = true
         }
     }
     
@@ -82,4 +90,6 @@ class ViewController: UIViewController {
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
+
 }
+
