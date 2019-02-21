@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         let nextViewController:NextViewController = segue.destination as! NextViewController
         // 遷移先のNextViewControllerで宣言しているbigImageに値を代入して渡す
         nextViewController.image = images[imageIndex]
+        if timer != nil {
+        timer.invalidate()
+        timer = nil
+        }
     }
     
     var imageIndex = 0
